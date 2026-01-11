@@ -1,0 +1,114 @@
+Smart Proximity Arduino System
+
+Overview:-
+
+This project demonstrates a Smart Proximity Detection System using Arduino Uno and an ultrasonic sensor.
+The system detects the presence of an object or person within a defined distance and triggers an output (LED) accordingly.
+
+It is designed as a foundational embedded systems project to understand sensor interfacing, real-time decision making, and microcontroller programming.
+
+Objectives:-
+
+To measure distance using an ultrasonic sensor
+
+To detect proximity based on a threshold distance
+
+To control an output device (LED) using Arduino logic
+
+To understand hardware–software interaction
+
+Components Used:- 
+Component	            Quantity
+Arduino Uno                     1
+Ultrasonic Sensor (HC-SR04)	1
+LED	                        1
+Resistor (220Ω / 330Ω)   	1
+Breadboard	                1
+Jumper Wires (Male–Male)	As required
+USB Cable	                1
+
+Pin Connections:-
+Arduino Pin	 Connected To
+5V	         Sensor VCC
+GND	         Sensor GND & LED GND
+D9	         Sensor TRIG
+D10	         Sensor ECHO
+D6	         LED (via resistor)
+
+Working Principle:-
+
+Arduino sends an ultrasonic pulse through the TRIG pin
+
+The pulse reflects from an object and returns to the ECHO pin
+
+Arduino calculates distance using time-of-flight
+
+If the distance is below a defined threshold:
+
+LED turns ON
+
+If the distance exceeds the threshold:
+
+LED turns OFF
+
+Logic Used:-
+
+Distance is calculated using:
+
+distance = duration × speed of sound / 2
+
+
+Conditional logic (if-else) is used to compare distance with threshold
+
+Serial monitoring is used for debugging and distance visualization
+
+Software & Tools:-
+
+Arduino IDE
+
+Embedded C / Arduino C++
+
+Features:-
+
+Real-time proximity detection
+
+Simple and scalable logic
+
+Beginner-friendly hardware setup
+
+Easy to extend to buzzers, relays, or displays
+
+Applications:-
+
+Smart lighting systems
+
+Occupancy detection
+
+Automatic door systems
+
+Security and monitoring systems
+
+IoT-based automation foundations
+
+Learning Outcomes:-
+
+Sensor interfacing with Arduino
+
+Understanding breadboard power distribution
+
+Embedded programming basics
+
+Real-time system behavior
+
+Debugging using Serial Monitor
+
+Future Improvements:-
+
+Replace LED with relay module for appliance control
+
+Add buzzer for alerts
+
+Integrate LCD for distance display
+
+Connect to IoT platforms for remote monitoring
+
